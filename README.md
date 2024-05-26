@@ -24,14 +24,14 @@ It interacts with the game window, simulates mouse clicks, and manages pre-made 
 1) Download the executable from here.
 
 2) Run the executable:
-   - Double-click the *AutomatedRaid.exe* file to start the program.
+   - Double-click the *RSLAutoFarm.exe* file to start the program.
    - Follow the on-screen prompts to configure your farming setup.
 
 ### Using the Python Script
 1) **Clone the repository:**
     ```console
-    git clone https://github.com/tsiapalis/RaidAuto.git
-    cd RaidAuto
+    git clone https://github.com/tsiapalis/RSLAutoFarm.git
+    cd RSLAutoFarm
     ```
 2) **Install the required libraries:**
    ```console
@@ -39,17 +39,17 @@ It interacts with the game window, simulates mouse clicks, and manages pre-made 
    ```
 3) **Run the script:**
     ```console
-    python AutomatedRaid.py
+    python RSLAutoFarm.py
     ```
 
 4) **Follow the prompts** to configure your farming setup.
 
 ### Usage
-1) Open *Raid: Shadow Legends* from the official plarium client.
+1) Open *Raid: Shadow Legends* app from the official Plarium client.
 
 2) Start the program:
-   - If using the executable, double-click the *AutomatedRaid.exe* file.
-   - If using the Python script, run python *AutomatedRaid.py* in your terminal.
+   - If using the executable, double-click the *RSLAutoFarm.exe* file.
+   - If using the Python script, run python *RSLAutoFarm.py* in your terminal.
     
 3) Follow the prompts to configure your farming setup:
    -  Number of teams
@@ -84,16 +84,16 @@ You have 3 seconds to open the RSL window.
 - **UserInput()** : Collects and returns user input functions for farming setup.
   - **Teams(prompt)** : Gets the number of farming teams.
   - **StageDifficulty(prompt)** : Gets the farming stage difficulty.
-  - **XpBoost(prompt)** : Checks for an active XP boost.
+  - **XpBoost(prompt)** : Gets if there is an active XP boost.
   - **FarmingTime(prompt)** : Gets the average farming time.
 - **TeamInfoUpdate(n_t, f_d, xp)**: Updates team information based on user input.
-  - **TeamDetails(prompt)**: Gets the details of each team.
+  - **TeamDetails(prompt)**: Gets the details of each team. Amount of Champions and their rank.
   - **Repeats(team, f, xp)** : Calculates the number of repeats required for leveling up.
-- **ButtonClick(b)** : Simulates a mouse click on the specified button.
-- **TeamChange(team)** : Changes the team setup.
-- **Drag()** : Drags the team selection screen to display teams 8-14.
+- **ButtonClick(b)** : Simulates a mouse click on the specified button after a short and random countdown.
+- **TeamChange(team)** : Selects the next team for the Team Setup section.
+- **Drag()** : Drags the team selection screen to display teams 8-14 section.
 - **StartFarming()**: Initiates the farming process.
-- **Main()**: Main function that loops through teams and manages the farming process.
+- **Main()**: Main function of RSLAutoFarm.
 
 ### Comment Out
 - ~~**PlayerEnegry(prompt)**: *Gets the player’s energy (future feature).*~~ Will be included in future commit.
@@ -107,3 +107,7 @@ You have 3 seconds to open the RSL window.
 
 ## License
 ***This project is licensed under the MIT License - see the LICENSE file for details.***
+
+## Version
+
+'0.1.0'
