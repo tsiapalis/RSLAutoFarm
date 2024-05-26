@@ -111,5 +111,5 @@ You have 3 seconds to open the RSL window.
 
 ## Version History
 
-- **Version 1.0** (2024-05-26):
+- **Version 0.1.0** (2024-05-26):
   - Initial release.
