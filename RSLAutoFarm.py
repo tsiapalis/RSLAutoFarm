@@ -74,17 +74,17 @@ console_handler.setFormatter(console_format)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
-def GetMousePosition(): 
-    """Prints mouse's position until KeyboardInterrupt. On KeyboardInterrupt returns mouse position."""
-    logging.info("Move your mouse to the desired position and press Ctrl+C to capture the position.")
-    try:
-        while True:
-            x, y = pyautogui.position()
-            position_str = f"Position captured: X={x}, Y={y}"
-            print(position_str, end="\r")
-    except KeyboardInterrupt:
-        print("\nPosition captured successfully.")
-        return x, y
+# def GetMousePosition(): 
+#     """Prints mouse's position until KeyboardInterrupt. On KeyboardInterrupt returns mouse position."""
+#     logging.info("Move your mouse to the desired position and press Ctrl+C to capture the position.")
+#     try:
+#         while True:
+#             x, y = pyautogui.position()
+#             position_str = f"Position captured: X={x}, Y={y}"
+#             print(position_str, end="\r")
+#     except KeyboardInterrupt:
+#         print("\nPosition captured successfully.")
+#         return x, y
 
 def WindowDimensions(window_title): 
     """Modifies RSL window's position, width and height properties. Exits program if window not found."""
@@ -150,15 +150,15 @@ def FarmingTime(prompt):
             else: logger.error("Invalid input: Please enter correct a run time.")
         except ValueError: logger.error("Invalid input: Please enter correct a run time.")
 
-def PlayerEnegry(prompt):
-    """Prompts user for available energy and returns the value if valid."""
-    while True:
-        try:
-            energy = int(input(prompt))
-            if energy < 10000: 
-                logger.info(f"User has {energy}")
-                return energy
-        except ValueError: logger.error("Invalid input: Please enter a number less than 9999.")  
+# def PlayerEnegry(prompt):
+#     """Prompts user for available energy and returns the value if valid."""
+#     while True:
+#         try:
+#             energy = int(input(prompt))
+#             if energy < 10000: 
+#                 logger.info(f"User has {energy}")
+#                 return energy
+#         except ValueError: logger.error("Invalid input: Please enter a number less than 9999.")  
 
 def TeamDetails(prompt):
     """Prompts user for team details in format 'Champions'x'Rank'. Returns valid input."""
