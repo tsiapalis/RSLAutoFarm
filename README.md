@@ -21,7 +21,8 @@ It interacts with the game window, simulates mouse clicks, and manages pre-made 
 ## Installation
 
 ### Using the Executable
-1) Download the executable from here.
+1) Download the executable from [here](https://github.com/tsiapalis/RSLAutoFarm/releases/download/v0.1.0/RSLAutoFarm.exe)
+.
 
 2) Run the executable:
    - Double-click the *RSLAutoFarm.exe* file to start the program.
