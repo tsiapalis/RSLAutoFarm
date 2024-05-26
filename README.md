@@ -108,6 +108,7 @@ You have 3 seconds to open the RSL window.
 ## License
 ***This project is licensed under the MIT License - see the LICENSE file for details.***
 
-## Version
+## Version History
 
-'0.1.0'
+- **Version 1.0** (2024-05-26):
+  - Initial release.
